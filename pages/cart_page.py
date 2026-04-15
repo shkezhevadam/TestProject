@@ -72,7 +72,7 @@ class Cart_Page(Base):
         self.click_authorization()
         self.assert_main_word(self.get_login_authorization(), "Вход\n/\nРегистрация")
         self.input_phone_number()
-        # self.click_get_sms_code()
+        self.click_get_sms_code()
 
 
 
