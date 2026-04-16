@@ -1,10 +1,10 @@
 
 -----
 Test: tests/test_buy_product.py::test_buy_product (call)
-Start time: 2026-04-16 15:20:43.034639
+Start time: 2026-04-16 17:01:52.009564
 Start name method: select_product_section
 
-End time: 2026-04-16 15:20:50.256682
+End time: 2026-04-16 17:02:00.012958
 End name method: select_product_section
 URL: https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu
 
@@ -12,10 +12,10 @@ URL: https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu
 
 -----
 Test: tests/test_buy_product.py::test_buy_product (call)
-Start time: 2026-04-16 15:20:50.257008
+Start time: 2026-04-16 17:02:00.013403
 Start name method: filter_and_select_product
 
-End time: 2026-04-16 15:20:54.966950
+End time: 2026-04-16 17:02:04.701426
 End name method: filter_and_select_product
 URL: https://www.citilink.ru/product/smartfon-apple-iphone-17-a3520-256gb-chernyi-3g-4g-1sim-6-3-1206x2622-2143350/
 
@@ -23,10 +23,10 @@ URL: https://www.citilink.ru/product/smartfon-apple-iphone-17-a3520-256gb-cherny
 
 -----
 Test: tests/test_buy_product.py::test_buy_product (call)
-Start time: 2026-04-16 15:20:54.967928
+Start time: 2026-04-16 17:02:04.702371
 Start name method: add_product_to_cart
 
-End time: 2026-04-16 15:20:56.768162
+End time: 2026-04-16 17:02:06.512679
 End name method: add_product_to_cart
 URL: https://www.citilink.ru/order/
 
@@ -34,10 +34,10 @@ URL: https://www.citilink.ru/order/
 
 -----
 Test: tests/test_buy_product.py::test_buy_product (call)
-Start time: 2026-04-16 15:20:56.768377
+Start time: 2026-04-16 17:02:06.513048
 Start name method: checkout_verification
 
-End time: 2026-04-16 15:20:58.053895
+End time: 2026-04-16 17:02:08.381390
 End name method: checkout_verification
 URL: https://www.citilink.ru/order/
 
