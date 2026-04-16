@@ -18,14 +18,14 @@ class Main_Page(Base):
     catalog = '//a[@href="/catalog/"]'
     phones_tablets_headphones = '/html/body/div[3]/div/div/div/div/div/div[5]/div/div/div/div/div[1]/div/div[1]/div/a[3]/div/span'
     apple_phones = '(//span[@class="em95myw0 app-catalog-1wyeo8j-GroupItem--StyledSubCategoryGroupItem-GroupItem--GroupItemWithStyles eoq77kn0"])[1]'
-    search_bar = '(//input[@class="app-catalog-akc9uj-Input--Input-composeBreakpointsStyles--arrayOfStylesByBreakpoints-getTypographyStyles--getTypographyStyles ewcwsov0"])[1]'
+    search_bar = '//input[@placeholder="Поиск по товарам"]'
     search_button = '(//button[@class="app-catalog-13hgilf-BaseButton--BaseButton-components--Button-IconButton--StyledIconButton e1e3s3bk0"])[2]'
 
     '''Локатор элемента следующей страницы для сравнения с ожидаемым значением после перехода в раздел товаров.'''
     main_word = '//div[@class="app-catalog-1d0tddh e192la1o0"]'
 
     '''Локатор элемента следующей страницы для сравнения с ожидаемым значением после поиска товара.'''
-    main_word_search = '//h1[@class="e3oo0180 eyw7vua0 app-catalog-dtjp04-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledHeading--getHeadingStyle-Heading--StyledHeadingComponent ez8h4tf0"]'
+    main_word_search = '//h1[@class="erx657h0 eyw7vua0 app-catalog-1mjne82-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledHeading--getHeadingStyle-Heading--StyledHeadingComponent e1d9wgme0"]'
 
     #Getters
     def get_catalog(self):

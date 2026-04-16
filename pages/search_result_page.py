@@ -12,7 +12,7 @@ class Search_Result_Page(Base):
         self.driver = driver
 
     #Locators
-    phone = '//a[@class="app-catalog-1g0fl7h-Anchor--Anchor-Anchor--StyledAnchor ejir1360"]'
+    phone = '//*[@id="__next"]/div[1]/main/div/div/div[2]/section/div[2]/div[2]/div/div/div/div[2]/div[3]/a'
     phone_price = '//span[@class="app-catalog-1qcsymx-MetaWrapper--StyledMetaWrapper e1l3zmw0"]'
 
     '''Локаторы названия товара и его цены на странице товара для их сравнения со значениями в разделе товаров.'''
