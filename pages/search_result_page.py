@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Search_Result_Page(Base):
@@ -47,6 +48,7 @@ class Search_Result_Page(Base):
     # Methods(Steps)
     '''Переход на страницу выбранного товара.'''
     def select_product(self):
+        Logger.add_start_step(method='select_product')
         self.get_current_url()
         self.assert_url("https://www.citilink.ru/search/?text=6.3%22+%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Apple+iPhone+17+256Gb%2C+A3520%2C+%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9")
         value_product_name = self.get_phone().text
@@ -55,3 +57,4 @@ class Search_Result_Page(Base):
         self.assert_product_name(value_product_name, self.get_product_page_name())
         self.assert_price(value_product_price, self.get_product_page_price())
         self.assert_main_word(self.get_main_word_product_page(), 'Описание')
+        Logger.add_end_step(url=self.driver.current_url, method='select_product')

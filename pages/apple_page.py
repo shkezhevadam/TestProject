@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Apple_Page(Base):
@@ -228,6 +229,7 @@ class Apple_Page(Base):
     # Methods(Steps)
     '''Фильтрация товаров и выбор товара.'''
     def filter_and_select_product(self):
+        Logger.add_start_step(method='filter_and_select_product')
         self.get_current_url()
         self.assert_url("https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu")
         self.move_max_price_pointer(-60)
@@ -242,10 +244,12 @@ class Apple_Page(Base):
         self.assert_product_name(value_product_1_name, self.get_product_page_name())
         self.assert_price(value_product_1_price, self.get_product_page_price())
         self.assert_main_word(self.get_main_word_product_page(), 'Описание')
+        Logger.add_end_step(url=self.driver.current_url, method='filter_and_select_product')
 
 
     '''Фильтрация товаров и выбор 3 товаров.'''
     def filter_and_select_3_products(self):
+        Logger.add_start_step(method='filter_and_select_3_products')
         self.get_current_url()
         self.assert_url("https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu")
         self.move_max_price_pointer(-60)
@@ -266,4 +270,5 @@ class Apple_Page(Base):
         value_product_3_price = self.get_product_3_cart_price().text
         self.assert_sum_price(value_product_1_price, value_product_2_price, value_product_3_price, self.get_product_in_cart_price() )
         self.assert_main_word(self.get_main_word_cart(), 'Корзина')
+        Logger.add_end_step(url=self.driver.current_url, method='filter_and_select_3_products')
 

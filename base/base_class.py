@@ -56,5 +56,5 @@ class Base():
     def get_screenshot(self):
         now_date = datetime.datetime.now(datetime.UTC).strftime("%Y.%m.%d.%H.%M.%S")
         name_screenshot = 'screenshot' + now_date + '.png'
-        self.driver.save_screenshot("C:\\Users\\Adam\\PyCharmProjects\\Citilink\\screenshots\\" + name_screenshot)
+        self.driver.save_screenshot(f"screenshots\\" + name_screenshot)
         print("Get a screenshot")

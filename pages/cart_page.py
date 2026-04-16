@@ -6,6 +6,9 @@ from base.base_class import Base
 
 from faker import Faker
 
+from utilities.logger import Logger
+
+
 class Cart_Page(Base):
 
     def __init__(self, driver):
@@ -65,6 +68,7 @@ class Cart_Page(Base):
 
     # Methods(Steps)
     def checkout_verification(self):
+        Logger.add_start_step(method='checkout_verification')
         self.get_current_url()
         self.assert_url("https://www.citilink.ru/order/")
         self.click_checkout()
@@ -73,6 +77,7 @@ class Cart_Page(Base):
         self.assert_main_word(self.get_login_authorization(), "Вход\n/\nРегистрация")
         self.input_phone_number()
         self.click_get_sms_code()
+        Logger.add_end_step(url=self.driver.current_url, method='checkout_verification')
 
 
 

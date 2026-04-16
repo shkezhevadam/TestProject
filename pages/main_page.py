@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Main_Page(Base):
@@ -86,6 +87,7 @@ class Main_Page(Base):
     #Methods(Steps)
     '''Выбор раздела товаров'''
     def select_product_section(self):
+        Logger.add_start_step(method='select_product_section')
         self.driver.get(self.url)
         self.driver.maximize_window()
         self.get_current_url()
@@ -94,10 +96,12 @@ class Main_Page(Base):
         self.click_apple_phones()
         self.assert_main_word(self.get_main_word(), "Apple iPhone")
         self.assert_url("https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu")
+        Logger.add_end_step(url=self.driver.current_url, method='select_product_section')
 
 
     '''Поиск по названию товара'''
     def search_for_product(self):
+        Logger.add_start_step(method='search_for_product')
         self.driver.get(self.url)
         self.driver.maximize_window()
         self.get_current_url()
@@ -105,7 +109,7 @@ class Main_Page(Base):
         self.input_product_name('6.3" Смартфон Apple iPhone 17 256Gb, A3520, черный')
         self.click_search_button()
         self.assert_main_word(self.get_main_word_search(), 'Результаты для «6.3" Смартфон Apple iPhone 17 256Gb, A3520, черный»')
-
+        Logger.add_end_step(url=self.driver.current_url, method='search_for_product')
 
 
 

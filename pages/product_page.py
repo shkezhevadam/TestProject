@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Product_Page(Base):
@@ -67,6 +68,7 @@ class Product_Page(Base):
     # Methods(Steps)
     "Добавление товара в корзину и переход в корзину."
     def add_product_to_cart(self):
+        Logger.add_start_step(method='add_product_to_cart')
         self.get_current_url()
         self.assert_url("https://www.citilink.ru/product/smartfon-apple-iphone-17-a3520-256gb-chernyi-3g-4g-1sim-6-3-1206x2622-2143350/")
         value_product_name = self.get_product_page_name().text
@@ -77,4 +79,5 @@ class Product_Page(Base):
         self.assert_price(value_product_price, self.get_product_cart_price())
         self.assert_price(value_product_price, self.get_product_in_cart_price())
         self.assert_main_word(self.get_main_word_cart_page(), 'Корзина')
-        # self.get_screenshot()
+        self.get_screenshot()
+        Logger.add_end_step(url=self.driver.current_url, method='add_product_to_cart')
