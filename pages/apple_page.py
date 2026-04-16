@@ -53,7 +53,7 @@ class Apple_Page(Base):
     product_3_cart_name = '(//span[@class="e1lzbfc40 e1a7a4n70 css-t13lc6-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent e1d9wgme0"])[3]'
     product_1_cart_price = '(//span[@class="css-1qcsymx-MetaWrapper--StyledMetaWrapper e1l3zmw0"])[1]'
     product_2_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[1]/div[2]/div/div/div/div[2]/div[7]/div/div[1]/div[2]/span/span'
-    product_3_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[1]/div[2]/div/div/div/div[3]/div[7]/div/div[1]/div[2]/span/span'
+    product_3_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[1]/div[2]/div/div/div/div[3]/div[6]/div/div[1]/div[2]/span/span'
 
     '''Локатор суммарной цены'''
     product_in_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[2]/div/div[1]/div[1]/div[1]/div[4]/div/span'
