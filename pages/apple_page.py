@@ -40,7 +40,7 @@ class Apple_Page(Base):
     main_word_product_page = '//*[@id="__next"]/div[1]/main/div/div[4]/div[2]/div/div[1]/div/section/div[1]/div/span'
 
     '''Локаторы кнопок добавления товара в корзину'''
-    add_product_1_to_cart = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[2]/div/div/div[5]/div[2]/div/div/button'
+    add_product_1_to_cart = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[5]/div[2]/div/div/button'
     add_product_2_to_cart = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[3]/div/div/div[5]/div[2]/div/div/button'
     add_product_3_to_cart = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[4]/div/div/div[5]/div[2]/div/div/button'
 
