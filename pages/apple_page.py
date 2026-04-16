@@ -25,8 +25,8 @@ class Apple_Page(Base):
     apply = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[23]/button[1]/span'
 
     '''Локаторы товаров и их цен.'''
-    phone_1 = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[2]/div/div/div[2]/div[3]/a'
-    phone_1_price = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[2]/div/div/div[5]/div[2]/div/button/span/div[2]/span/span'
+    phone_1 = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/a'
+    phone_1_price = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[5]/div[2]/div/button/span/div[2]/span/span'
     phone_2 = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[3]/div/div/div[2]/div[3]/a'
     phone_2_price = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[3]/div/div/div[5]/div[2]/div/button/span/div[2]/span/span'
     phone_3 = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[4]/div/div/div[2]/div[3]/a'
