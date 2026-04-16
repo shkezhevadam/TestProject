@@ -22,6 +22,7 @@ class Product_Page(Base):
     '''Локаторы названия и цены товара в корзине (на странице корзины две цены, поэтому сравниваю вторую цену тоже).'''
     product_cart_name = '//span[@class="e1lzbfc40 e1a7a4n70 css-t13lc6-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent e1d9wgme0"]'
     product_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[1]/div/div/div/div/div/div[6]/div/div[1]/div[2]/span'
+    '''Локатор суммарной цены'''
     product_in_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[2]/div/div[1]/div[1]/div[1]/div[4]/div/span/span'
 
     '''Локатор элемента следующей страницы для сравнения с ожидаемым значением после перехода в корзину.'''

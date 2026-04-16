@@ -42,6 +42,16 @@ class Base():
         assert price_1 == price_2
         print("Price is the same")
 
+    """Method assert summary price of 3 products"""
+    def assert_sum_price(self, price_1, price_2, price_3, price_in_cart_object):
+        value_price_1 = int(price_1.replace('₽', '').replace(" ", ""))
+        value_price_2 = int(price_2.replace('₽', '').replace(" ", ""))
+        value_price_3 = int(price_3.replace('₽', '').replace(" ", ""))
+        sum_price = price_in_cart_object.text
+        value_sum_price = int(sum_price.replace('₽', '').replace(" ", ""))
+        assert value_price_1 + value_price_2 + value_price_3 == value_sum_price
+        print("Summary price is correct")
+
     """Method screenshot"""
     def get_screenshot(self):
         now_date = datetime.datetime.now(datetime.UTC).strftime("%Y.%m.%d.%H.%M.%S")

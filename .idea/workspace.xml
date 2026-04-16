@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c261dff5-104e-4aa9-8ad1-e8e859d8e397" name="Changes" comment="n" />
+    <list default="true" id="c261dff5-104e-4aa9-8ad1-e8e859d8e397" name="Changes" comment="Tasks1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apple_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apple_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,7 +35,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -34,7 +44,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/shkezhevadam/Test_Project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/shkezhevadam/TestProject.git&quot;,
     &quot;accountId&quot;: &quot;fb98d382-424c-41aa-83a8-14f6e42767f1&quot;
   }
 }</component>
@@ -49,7 +59,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in test_buy_3_products.py.executor": "Run",
+    "Python tests.Python tests in test_buy_product.py.executor": "Run",
     "Python tests.Python tests in test_search_buy_product.py.executor": "Run",
+    "Python.search_result_page.executor": "Run",
     "Python.test_buy_product.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -158,7 +171,47 @@
       <option name="project" value="LOCAL" />
       <updated>1776246805563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776248275514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776248275514</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776248781907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776248781907</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776324818747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776324818747</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776326002940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776326002940</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776327503675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776327503675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -192,6 +245,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="n" />
-    <option name="LAST_COMMIT_MESSAGE" value="n" />
+    <MESSAGE value="Tasks1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks1" />
   </component>
 </project>
