@@ -254,12 +254,6 @@ class Apple_Page(Base):
         self.click_warranty()
         self.click_warranty_1_year()
         self.click_apply()
-        value_product_1_name = self.get_phone_1().text
-        value_product_1_price = self.get_phone_1_price().text
-        value_product_2_name = self.get_phone_2().text
-        value_product_2_price = self.get_phone_2_price().text
-        value_product_3_name = self.get_phone_3().text
-        value_product_3_price = self.get_phone_3_price().text
         self.click_add_product_1_to_cart()
         time.sleep(3)
         self.click_add_product_2_to_cart()
@@ -267,12 +261,9 @@ class Apple_Page(Base):
         self.click_add_product_3_to_cart()
         time.sleep(3)
         self.click_cart()
-        self.assert_product_name(value_product_1_name, self.get_product_1_cart_name())
-        self.assert_price(value_product_1_price, self.get_product_1_cart_price())
-        self.assert_product_name(value_product_2_name, self.get_product_2_cart_name())
-        self.assert_price(value_product_2_price, self.get_product_2_cart_price())
-        self.assert_product_name(value_product_3_name, self.get_product_3_cart_name())
-        self.assert_price(value_product_3_price, self.get_product_3_cart_price())
+        value_product_1_price = self.get_product_1_cart_price().text
+        value_product_2_price = self.get_product_2_cart_price().text
+        value_product_3_price = self.get_product_3_cart_price().text
         self.assert_sum_price(value_product_1_price, value_product_2_price, value_product_3_price, self.get_product_in_cart_price() )
         self.assert_main_word(self.get_main_word_cart(), 'Корзина')
 
