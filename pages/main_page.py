@@ -15,7 +15,7 @@ class Main_Page(Base):
         self.driver = driver
 
     #Locators
-    catalog = '//a[@class=" e13nx7xx0 app-catalog-nwap86-AnchorAsButton--StyledAnchorAsButton-AnchorAsButton--StyledAnchorAsButtonComponent-CatalogMenuAnchor--StyledCatalogMenuAnchor e4ktzbp0"]'
+    catalog = '//a[@href="/catalog/"]'
     phones_tablets_headphones = '/html/body/div[3]/div/div/div/div/div/div[5]/div/div/div/div/div[1]/div/div[1]/div/a[3]/div/span'
     apple_phones = '(//span[@class="em95myw0 app-catalog-1wyeo8j-GroupItem--StyledSubCategoryGroupItem-GroupItem--GroupItemWithStyles eoq77kn0"])[1]'
     search_bar = '(//input[@class="app-catalog-akc9uj-Input--Input-composeBreakpointsStyles--arrayOfStylesByBreakpoints-getTypographyStyles--getTypographyStyles ewcwsov0"])[1]'
