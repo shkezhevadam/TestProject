@@ -79,5 +79,4 @@ class Product_Page(Base):
         self.assert_price(value_product_price, self.get_product_cart_price())
         self.assert_price(value_product_price, self.get_product_in_cart_price())
         self.assert_main_word(self.get_main_word_cart_page(), 'Корзина')
-        self.get_screenshot()
         Logger.add_end_step(url=self.driver.current_url, method='add_product_to_cart')

@@ -77,6 +77,7 @@ class Cart_Page(Base):
         self.assert_main_word(self.get_login_authorization(), "Вход\n/\nРегистрация")
         self.input_phone_number()
         self.click_get_sms_code()
+        self.get_screenshot()
         Logger.add_end_step(url=self.driver.current_url, method='checkout_verification')
 
 
