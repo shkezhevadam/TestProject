@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c261dff5-104e-4aa9-8ad1-e8e859d8e397" name="Changes" comment="Tasks1" />
+    <list default="true" id="c261dff5-104e-4aa9-8ad1-e8e859d8e397" name="Changes" comment="Tasks1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apple_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apple_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776336446635</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776336674495</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1776336674495</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tasks1">
+      <option name="closed" value="true" />
+      <created>1776337148760</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776337148760</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
