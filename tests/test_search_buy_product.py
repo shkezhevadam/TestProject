@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 
@@ -9,7 +10,8 @@ from pages.cart_page import Cart_Page
 from conftest import set_group
 from conftest import set_up
 
-def test_buy_product(set_group, set_up ):
+@allure.description("Test search buy product")
+def test_search_buy_product(set_group, set_up ):
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)

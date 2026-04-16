@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 
@@ -8,6 +9,7 @@ from pages.cart_page import Cart_Page
 from conftest import set_group
 from conftest import set_up
 
+@allure.description("Test buy 3 products")
 def test_buy_3_products(set_group, set_up):
 
     options = webdriver.ChromeOptions()
