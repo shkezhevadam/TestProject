@@ -9,23 +9,19 @@ from utilities.logger import Logger
 
 class Product_Page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
     add_to_cart = '//button[@class="e1wjwlu80 eidfyie0 app-catalog-1srevuk-Button--StyledButton-Button--Button-ButtonWithIcon--StyledButtonWithIcon ekx3zbi0"]'
     cart = '//div[@data-meta-name="BasketButton"]'
 
     '''Локаторы названия товара и его цены на странице товара для их сравнения со значениями в корзине.'''
     product_page_name = '//div[@class="app-catalog-zf8fpo-TitleWrapper--StyledTitleWrapper e7n1imu0"]'
-    product_page_price = '//*[@id="__next"]/div[1]/main/div/div[2]/div/div[4]/div/div[3]/div/div[1]/div[1]/div[1]/div/div[2]/span/span'
+    product_page_price = '(//span[@class="app-catalog-1qcsymx-MetaWrapper--StyledMetaWrapper e1l3zmw0"])[1]'
 
     '''Локаторы названия и цены товара в корзине (на странице корзины две цены, поэтому сравниваю вторую цену тоже).'''
     product_cart_name = '//span[@class="e1lzbfc40 e1a7a4n70 css-t13lc6-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent e1d9wgme0"]'
-    product_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[1]/div/div/div/div/div/div[6]/div/div[1]/div[2]/span'
+    product_cart_price = '(//span[@class="css-1qcsymx-MetaWrapper--StyledMetaWrapper e1l3zmw0"])[1]'
     '''Локатор суммарной цены'''
-    product_in_cart_price = '//*[@id="__next"]/div[1]/main/div/div[2]/section/div[2]/div/div[1]/div[1]/div[1]/div[4]/div/span/span'
+    product_in_cart_price = '(//span[@class="css-1qcsymx-MetaWrapper--StyledMetaWrapper e1l3zmw0"])[7]'
 
     '''Локатор элемента следующей страницы для сравнения с ожидаемым значением после перехода в корзину.'''
     main_word_cart_page = '//span[@class="e1lzbfc40 e1a7a4n70 css-1f7sg44-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent e1d9wgme0"]'
@@ -72,7 +68,7 @@ class Product_Page(Base):
         with allure.step('Add product to cart'):
             Logger.add_start_step(method='add_product_to_cart')
             self.get_current_url()
-            self.assert_url("https://www.citilink.ru/product/smartfon-apple-iphone-17-a3520-256gb-chernyi-3g-4g-1sim-6-3-1206x2622-2143350/")
+            self.assert_url("https://www.citilink.ru/product/smartfon-apple-iphone-15-128gb-a3090-chernyi-1982727/")
             value_product_name = self.get_product_page_name().text
             value_product_price = self.get_product_page_price().text
             self.click_add_to_cart()

@@ -13,10 +13,6 @@ class Main_Page(Base):
 
     url = "https://www.citilink.ru/"
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     #Locators
     catalog = '//a[@href="/catalog/"]'
     phones_tablets_headphones = '/html/body/div[3]/div/div/div/div/div/div[5]/div/div/div/div/div[1]/div/div[1]/div/a[3]/div/span'
@@ -110,9 +106,9 @@ class Main_Page(Base):
             self.driver.maximize_window()
             self.get_current_url()
             self.click_search_bar()
-            self.input_product_name('6.3" Смартфон Apple iPhone 17 256Gb, A3520, черный')
+            self.input_product_name('6.1" Смартфон Apple iPhone 15 128Gb,  A3090,  черный')
             self.click_search_button()
-            self.assert_main_word(self.get_main_word_search(), 'Результаты для «6.3" Смартфон Apple iPhone 17 256Gb, A3520, черный»')
+            self.assert_main_word(self.get_main_word_search(), 'Результаты для «6.1" Смартфон Apple iPhone 15 128Gb, A3090, черный»')
             Logger.add_end_step(url=self.driver.current_url, method='search_for_product')
 
 

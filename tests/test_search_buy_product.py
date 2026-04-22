@@ -14,7 +14,7 @@ from conftest import set_up
 def test_search_buy_product(set_group, set_up ):
 
     options = webdriver.ChromeOptions()
-    # options.add_experimental_option("detach", True)
+    options.add_experimental_option("detach", True)
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     # options.add_argument("--guest")
 

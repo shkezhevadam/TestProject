@@ -12,10 +12,6 @@ from utilities.logger import Logger
 
 class Cart_Page(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     # Locators
     checkout = '//button[@class="eidfyie0 css-187ljum-Button--StyledButton-Button--Button ekx3zbi0"]'
     authorization = '//button[@class="eidfyie0 css-aoyh1h-Button--StyledButton-Button--Button ekx3zbi0"]'
