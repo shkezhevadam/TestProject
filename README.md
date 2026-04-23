@@ -33,3 +33,10 @@
    ```bash
    git clone https://github.com/shkezhevadam/TestProject.git
    cd TestProject
+2. Запустить все тесты
+   pytest
+   
+4. Запустить конкретный тест
+   pytest tests/test_buy_product.py
+   pytest tests/test_buy_3_products.py
+   pytest tests/test_search_buy_product.py
