@@ -33,11 +33,16 @@
    ```bash
    git clone https://github.com/shkezhevadam/TestProject.git
    cd TestProject
-2. Запустить все тесты
+
+2. Установить зависимости
+   ```bash
+   pip install -r requirements.txt
+   
+4. Запустить все тесты
    ```bash
    pytest
    
-4. Запустить конкретный тест
+5. Запустить конкретный тест
    ```bash
    pytest tests/test_buy_product.py
    pytest tests/test_buy_3_products.py
