@@ -55,16 +55,16 @@ class Main_Page(Base):
         self.get_catalog().click()
         print("Click catalog button")
 
-    '''Наводимся на поле "Бег, ходьба".'''
+    '''Наводимся на поле "Смартфоны, планшеты и наушники".'''
     def move_to_phones_tablets_headphones(self):
         action = ActionChains(self.driver)
         action.move_to_element(self.get_phones_tablets_headphones()).perform()
-        print("Move to Running, walking")
+        print("Move to Phones tablets headphones")
 
-    '''Кликаем на кнопку "Асфальт" в разделе "Мужская обувь".'''
+    '''Кликаем на кнопку "Смартфоны Apple".'''
     def click_apple_phones(self):
         self.get_apple_phones().click()
-        print("Click Man's Asphalt")
+        print("Click Apple phones")
 
     '''Кликаем по строке поиска.'''
     def click_search_bar(self):

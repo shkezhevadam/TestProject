@@ -167,7 +167,7 @@ class Apple_Page(Base):
     '''Клик по "Товары по акции".'''
     def click_for_sale(self):
         self.get_for_sale().click()
-        print("Click Expand all sizes")
+        print("Click For sale")
 
     '''Клик по "Гарантия".'''
     def click_warranty(self):
