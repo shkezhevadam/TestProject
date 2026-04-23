@@ -13,7 +13,7 @@ from conftest import set_up
 def test_buy_3_products(set_group, set_up):
 
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     # options.add_experimental_option("detach", True)
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     # options.add_argument("--guest")
