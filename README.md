@@ -32,7 +32,7 @@
 1. **Клонировать репозиторий**
    ```bash
    git clone https://github.com/shkezhevadam/TestProject.git
-   cd TestProject
+   cd TestProject\tests
 
 2. Установить зависимости
    ```bash
