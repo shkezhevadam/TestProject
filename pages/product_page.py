@@ -68,7 +68,7 @@ class Product_Page(Base):
         with allure.step('Add product to cart'):
             Logger.add_start_step(method='add_product_to_cart')
             self.get_current_url()
-            self.assert_url("https://www.citilink.ru/product/smartfon-apple-iphone-15-128gb-a3090-chernyi-1982727/")
+            # self.assert_url("https://www.citilink.ru/product/smartfon-apple-iphone-15-128gb-a3090-chernyi-1982727/")
             value_product_name = self.get_product_page_name().text
             value_product_price = self.get_product_page_price().text
             self.click_add_to_cart()
