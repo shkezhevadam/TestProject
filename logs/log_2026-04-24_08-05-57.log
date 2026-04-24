@@ -1,0 +1,44 @@
+
+-----
+Test: tests/test_search_buy_product.py::test_search_buy_product (call)
+Start time: 2026-04-24 08:05:58.310756
+Start name method: search_for_product
+
+End time: 2026-04-24 08:06:02.214947
+End name method: search_for_product
+URL: https://www.citilink.ru/search/?text=6.1%22+%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD+Apple+iPhone+15+128Gb%2C++A3090%2C++%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9
+
+-----
+
+-----
+Test: tests/test_search_buy_product.py::test_search_buy_product (call)
+Start time: 2026-04-24 08:06:02.215272
+Start name method: select_product
+
+End time: 2026-04-24 08:06:04.389217
+End name method: select_product
+URL: https://www.citilink.ru/product/smartfon-apple-iphone-15-128gb-a3090-chernyi-1982727/
+
+-----
+
+-----
+Test: tests/test_search_buy_product.py::test_search_buy_product (call)
+Start time: 2026-04-24 08:06:04.389932
+Start name method: add_product_to_cart
+
+End time: 2026-04-24 08:06:06.419808
+End name method: add_product_to_cart
+URL: https://www.citilink.ru/order/
+
+-----
+
+-----
+Test: tests/test_search_buy_product.py::test_search_buy_product (call)
+Start time: 2026-04-24 08:06:06.420197
+Start name method: checkout_verification
+
+End time: 2026-04-24 08:06:07.801251
+End name method: checkout_verification
+URL: https://www.citilink.ru/order/
+
+-----

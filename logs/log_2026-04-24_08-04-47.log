@@ -1,0 +1,28 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2026-04-24 08:04:48.500770
+Start name method: select_product_section
+
+End time: 2026-04-24 08:04:56.315306
+End name method: select_product_section
+URL: https://www.citilink.ru/catalog/smartfony/APPLE/?ref=mainmenu
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2026-04-24 08:04:56.315777
+Start name method: filter_and_select_product
+
+End time: 2026-04-24 08:05:01.714775
+End name method: filter_and_select_product
+URL: https://www.citilink.ru/product/smartfon-apple-iphone-16-256gb-a3287-ultramarin-2063159/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2026-04-24 08:05:01.715668
+Start name method: add_product_to_cart
+
