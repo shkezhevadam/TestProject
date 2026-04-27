@@ -19,8 +19,8 @@ class Apple_Page(Base):
     # Locators
     '''Локаторы для фильтрации товаров.'''
     max_price_pointer = '//div[@class="rc-slider-handle rc-slider-handle-2"]'
-    available_for_delivery = '(//span[@class="e9gxmdn0 app-catalog-2s5ps0-Wrapper--StyledWrapper-Checkbox--StyledCheckboxComponent enxkrel0"])[2]'
-    for_sale = '(//span[@class="e9gxmdn0 app-catalog-2s5ps0-Wrapper--StyledWrapper-Checkbox--StyledCheckboxComponent enxkrel0"])[2]'
+    available_for_delivery = '(//span[@class="e9gxmdn0 app-catalog-2s5ps0-Wrapper--StyledWrapper-Checkbox--StyledCheckboxComponent enxkrel0"])[3]'
+    for_sale = '(//span[@class="e9gxmdn0 app-catalog-2s5ps0-Wrapper--StyledWrapper-Checkbox--StyledCheckboxComponent enxkrel0"])[3]'
     warranty = '(//span[@class="app-catalog-k1irjw e1o626c90"])[18]'
     warranty_1_year = '//*[@id="__next"]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[21]/div[2]/div/div/div/div/div/div[1]/div/label/span[1]'
     apply = '//button[@class="eidfyie0 app-catalog-1bflktt-Button--StyledButton-Button--Button ekx3zbi0"]'
