@@ -106,9 +106,9 @@ class Main_Page(Base):
             self.driver.maximize_window()
             self.get_current_url()
             self.click_search_bar()
-            self.input_product_name('6.1" Смартфон Apple iPhone 15 128Gb,  A3090,  черный')
+            self.input_product_name('Смартфон Apple iPhone')
             self.click_search_button()
-            self.assert_main_word(self.get_main_word_search(), 'Результаты для «6.1" Смартфон Apple iPhone 15 128Gb, A3090, черный»')
+            self.assert_main_word(self.get_main_word_search(), 'Результаты для «Смартфон Apple iPhone»')
             Logger.add_end_step(url=self.driver.current_url, method='search_for_product')
 
 
