@@ -27,11 +27,11 @@ class Apple_Page(Base):
 
     '''Локаторы товаров и их цен.'''
     phone_1 = '(//div[@class="app-catalog-1p7hp34-Flex--StyledFlex-Name--StyledName ezwjdcp0"])[1]'
-    phone_1_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 app-catalog-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[1]'
+    phone_1_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 css-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[1]'
     phone_2 = '(//div[@class="app-catalog-1p7hp34-Flex--StyledFlex-Name--StyledName ezwjdcp0"])[2]'
-    phone_2_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 app-catalog-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[2]'
+    phone_2_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 css-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[2]'
     phone_3 = '(//div[@class="app-catalog-1p7hp34-Flex--StyledFlex-Name--StyledName ezwjdcp0"])[3]'
-    phone_3_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 app-catalog-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[3]'
+    phone_3_price = '(//span[@class="eyylnuu0 e1vrd3w50 e1a7a4n70 css-1mc2zba-StyledTypography--getTypographyStyle-composeBreakpointsStyles--arrayOfStylesByBreakpoints-StyledText--getTextStyle-Text--StyledTextComponent-Wrapper--StyledWrapper-Price--StyledPrice e1d9wgme0"])[3]'
 
     '''Локаторы названия товара и его цены на странице товара для их сравнения со значениями в разделе товаров.'''
     product_page_name = '//div[@class="app-catalog-zf8fpo-TitleWrapper--StyledTitleWrapper e7n1imu0"]'
@@ -239,6 +239,7 @@ class Apple_Page(Base):
             self.click_warranty()
             self.click_warranty_1_year()
             self.click_apply()
+            time.sleep(2)
             value_product_1_name = self.get_phone_1().text
             value_product_1_price = self.get_phone_1_price().text
             self.click_phone_1()
@@ -260,6 +261,7 @@ class Apple_Page(Base):
             self.click_warranty()
             self.click_warranty_1_year()
             self.click_apply()
+            time.sleep(2)
             self.click_add_product_1_to_cart()
             time.sleep(3)
             self.click_add_product_2_to_cart()
